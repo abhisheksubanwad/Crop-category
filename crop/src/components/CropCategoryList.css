@@ -1,0 +1,215 @@
+/* Container for the entire component */
+.crop-list-container {
+  margin: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading style */
+.crop-list-container h2 {
+  font-size: 24px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+/* Language filter section */
+.crop-list-container label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+}
+
+.crop-list-container input[type="text"] {
+  margin-left: 10px;
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 200px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.crop-list-container input[type="text"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Table styles */
+.crop-list-container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.crop-list-container th,
+.crop-list-container td {
+  padding: 12px;
+  text-align: left;
+  font-size: 16px;
+}
+
+.crop-list-container th {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.crop-list-container tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.crop-list-container tr:hover {
+  background-color: #f1f1f1;
+}
+
+.crop-list-container img {
+  max-width: 50px;
+  max-height: 50px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+/* Pagination controls */
+.pagination-controls {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.pagination-controls button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.pagination-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+.pagination-controls button:hover {
+  background-color: #0056b3;
+}
+
+/* Error message styling */
+.crop-list-container p {
+  font-size: 18px;
+  color: #e74c3c;
+  text-align: center;
+}
+
+/* Delete button style */
+.delete-button {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: #c0392b;
+}
+
+/* Update button style (same as delete button) */
+.update-button {
+  background-color: #e74c3c; /* Same as delete button */
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.update-button:hover {
+  background-color: #c0392b; /* Same hover effect as delete button */
+}
+
+/* Modal styling */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  max-width: 500px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.modal h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.modal label {
+  font-size: 16px;
+  font-weight: bold;
+  color: #555;
+  display: block;
+  margin: 10px 0 5px;
+}
+
+.modal input[type="text"],
+.modal select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+.modal input[type="text"]:focus,
+.modal select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.modal button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  margin-top: 15px;
+}
+
+.modal button:hover {
+  background-color: #0056b3;
+}
+
+.modal button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
