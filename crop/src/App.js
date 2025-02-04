@@ -1,19 +1,3 @@
-// import React from "react";
-// import "./App.css";
-// import CropCategoryForm from "./components/CropCategoryForm";
-
-
-// function App() {
-//     return (
-//         <div className="App">
-//             <CropCategoryForm />
-//         </div>
-//     );
-// }
-
-// export default App;
-
-
 import React from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
